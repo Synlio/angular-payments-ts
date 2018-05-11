@@ -17,16 +17,53 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "4.3.0",
-    "@angular/compiler": "4.3.0",
-    "@angular/compiler-cli": "4.3.0",
-    "@angular/core": "4.3.0",
-    "@angular/forms": "4.3.0",
-    "@angular/http": "4.3.0",
-    "@angular/platform-browser": "4.3.0",
-    "@angular/platform-browser-dynamic": "4.3.0",
+{
+  "name": "angular-payments-ts",
+  "description": "Directive for formatting and validating credit card forms",
+  "version": "1.2.3",
+  "homepage": "https://github.com/alex-polosky/angular-payments-ts",
+  "author": {
+    "name": "Alex Polosky",
+    "url": "https://github.com/alex-polosky"
+  },
+  "contributors": [],
+  "main": "angular-payments.umd.js",
+  "module": "angular-payments.esm.js",
+  "typings": "angular-payments.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alex-polosky/angular-payments-ts.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "5.0.3",
+    "@angular/compiler": "5.0.3",
+    "@angular/compiler-cli": "5.0.3",
+    "@angular/core": "5.0.3",
+    "@angular/forms": "5.0.3",
+    "@angular/http": "5.0.3",
+    "@angular/platform-browser": "5.0.3",
+    "@angular/platform-browser-dynamic": "5.0.3",
     "rxjs": "5.5.2",
     "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^5.0.3",
+    "node-sass": "^4.7.2",
+    "rollup-plugin-angular": "^0.5.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-typescript": "^0.8.1",
+    "typescript": "2.4.2"
+  },
+  "scripts": {
+    "build": "tsc && rollup -c rollup.config.umd.js && rollup -c rollup.config.esm.js && ngc",
+    "bundle": "node tools/copy-package.js && node tools/cleanup-package.js && node tools/copy-type.js && node tools/copy-meta.js",
+    "prepublish": "npm run build && npm run bundle",
+    "publish": "cd ./dist && npm publish && cd ../"
+  }
+}
+
   },
   "devDependencies": {
     "@angular/compiler-cli": "^4.3.0",
