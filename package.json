@@ -1,21 +1,37 @@
 {
-  "name": "angular-payments-ts",
-  "description": "Directive for formatting and validating credit card forms",
-  "version": "1.2.3",
-  "homepage": "https://github.com/alex-polosky/angular-payments-ts",
+  "_from": "angular-payments-ts",
+  "_id": "angular-payments-ts@1.2.3",
+  "_inBundle": false,
+  "_integrity": "sha1-NY9+0wA3ypNHtPleVN4ypxrikzQ=",
+  "_location": "/angular-payments-ts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-payments-ts",
+    "name": "angular-payments-ts",
+    "escapedName": "angular-payments-ts",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-payments-ts/-/angular-payments-ts-1.2.3.tgz",
+  "_shasum": "358f7ed30037ca9347b4f95e54de32a71ae29334",
+  "_spec": "angular-payments-ts",
+  "_where": "/Users/scott/kwc-sandboxz",
   "author": {
     "name": "Alex Polosky",
     "url": "https://github.com/alex-polosky"
   },
-  "contributors": [],
-  "main": "angular-payments.umd.js",
-  "module": "angular-payments.esm.js",
-  "typings": "angular-payments.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/alex-polosky/angular-payments-ts.git"
+  "bugs": {
+    "url": "https://github.com/alex-polosky/angular-payments-ts/issues"
   },
-  "license": "MIT",
+  "bundleDependencies": false,
+  "contributors": [],
   "dependencies": {
     "@angular/common": "5.0.3",
     "@angular/compiler": "5.0.3",
@@ -28,19 +44,17 @@
     "rxjs": "5.5.2",
     "zone.js": "^0.8.20"
   },
-  "devDependencies": {
-    "@angular/compiler-cli": "^5.0.3",
-    "node-sass": "^4.7.2",
-    "rollup-plugin-angular": "^0.5.3",
-    "rollup-plugin-commonjs": "^8.3.0",
-    "rollup-plugin-node-resolve": "^3.0.3",
-    "rollup-plugin-typescript": "^0.8.1",
-    "typescript": "2.4.2"
+  "deprecated": false,
+  "description": "Directive for formatting and validating credit card forms",
+  "homepage": "https://github.com/alex-polosky/angular-payments-ts",
+  "license": "MIT",
+  "main": "angular-payments.umd.js",
+  "module": "angular-payments.esm.js",
+  "name": "angular-payments-ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alex-polosky/angular-payments-ts.git"
   },
-  "scripts": {
-    "build": "tsc && rollup -c rollup.config.umd.js && rollup -c rollup.config.esm.js && ngc",
-    "bundle": "node tools/copy-package.js && node tools/cleanup-package.js && node tools/copy-type.js && node tools/copy-meta.js",
-    "prepublish": "npm run build && npm run bundle",
-    "publish": "cd ./dist && npm publish && cd ../"
-  }
+  "typings": "angular-payments.d.ts",
+  "version": "1.2.3"
 }
