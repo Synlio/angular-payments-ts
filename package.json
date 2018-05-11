@@ -13,23 +13,23 @@
   "typings": "angular-payments.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/alex-polosky/angular-payments-ts.git"
+    "url": "git://github.com/Synlio/angular-payments-ts.git"
   },
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "5.0.3",
-    "@angular/compiler": "5.0.3",
-    "@angular/compiler-cli": "5.0.3",
-    "@angular/core": "5.0.3",
-    "@angular/forms": "5.0.3",
-    "@angular/http": "5.0.3",
-    "@angular/platform-browser": "5.0.3",
-    "@angular/platform-browser-dynamic": "5.0.3",
+    "@angular/common": "4.3.0",
+    "@angular/compiler": "4.3.0",
+    "@angular/compiler-cli": "4.3.0",
+    "@angular/core": "4.3.0",
+    "@angular/forms": "4.3.0",
+    "@angular/http": "4.3.0",
+    "@angular/platform-browser": "4.3.0",
+    "@angular/platform-browser-dynamic": "4.3.0",
     "rxjs": "5.5.2",
     "zone.js": "^0.8.20"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^5.0.3",
+    "@angular/compiler-cli": "^4.3.0",
     "node-sass": "^4.7.2",
     "rollup-plugin-angular": "^0.5.3",
     "rollup-plugin-commonjs": "^8.3.0",
